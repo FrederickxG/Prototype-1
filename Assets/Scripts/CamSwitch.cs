@@ -18,16 +18,16 @@ public class CamSwitch : MonoBehaviour
             cam1.SetActive(true);
             cam2.SetActive(false);
             cam3.SetActive(false);
-         }
-
-        if (Input.GetButtonDown("Switch2"))
+         }else if (Input.GetButtonDown("Switch2"))
          {
+            
             cam1.SetActive(false);
             cam2.SetActive(true);
             cam3.SetActive(false);
          }
-         if (Input.GetButtonDown("Switch3"))
+         else if (Input.GetKeyDown(KeyCode.Alpha3))
          {
+            Debug.Log ("Switch 3");
             cam1.SetActive(false);
             cam2.SetActive(false);
             cam3.SetActive(true);
